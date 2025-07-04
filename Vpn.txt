@@ -1,17 +1,11 @@
-[
-  {
-    "v": "2",
-    "ps": "Kravix404 VPN 🚀🔒 (WARP Edition)",
-    "add": "https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warpgen.net.conf",  // Замените на реальный IP/Domain
-    "port": "443",
-    "id": "74467c39-c6f5-443e-bafa-662657615a51",     // https://www.uuidgenerator.net/
-    "aid": "0",
-    "scy": "auto",
-    "net": "ws",                           // WebSocket для маскировки
-    "type": "none",
-    "host": "ваш-домен-для-maskirovki.com", // Обязательно для WARP + TLS
-    "path": "/v2ray-path",                 // Любой путь, например /kravix404
-    "tls": "tls",                          // Обязательно включите
-"sni":"https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/Vpn.txt""         // Совпадает с host
-  }
-]
+# Подписка с WARP + другие серверы
+wireguard://[Interface]
+PrivateKey=MG4rY7gu1jtnu2c7eA/SlVQv3L3zjW24elmg4TuBh0Y=
+Address=172.16.0.2/32,2606:4700:110:8a36:1ce2:89ea:4ac8:801a/128
+DNS=1.1.1.1,2606:4700:4700::1111
+MTU=1280
+
+[Peer]
+PublicKey=bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+AllowedIPs=0.0.0.0/0,::/0
+Endpoint=188.114.99.224:1002
