@@ -1,15 +1,110 @@
-servers:
-  - name: warp1
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp1.conf
-  - name: warp2
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp2.conf
-  - name: warp3
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp3.conf
-  - name: warp4
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp4.conf
-  - name: warp5
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp5.conf
-  - name: warp6
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp6.conf
-  - name: warp7
-    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp7.conf
+# Coala Clash Config
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+
+proxies:
+  - name: "WARP-1"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99b9
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se40=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-2"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.3
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99ba
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se41=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-3"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.4
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bb
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se42=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-4"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.5
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bc
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se43=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-5"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.6
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bd
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se44=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-6"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.7
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99be
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se45=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+  - name: "WARP-7"
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 1701
+    ip: 172.16.0.8
+    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bf
+    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se46=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    dns: [1.1.1.1, 1.0.0.1]
+    mtu: 1280
+    udp: true
+
+proxy-groups:
+  - name: "🚀 WARP"
+    type: select
+    proxies:
+      - WARP-1
+      - WARP-2
+      - WARP-3
+      - WARP-4
+      - WARP-5
+      - WARP-6
+      - WARP-7
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 WARP
+  - DOMAIN-SUFFIX,youtube.com,🚀 WARP
+  - DOMAIN-SUFFIX,cloudflare.com,🚀 WARP
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 WARP
