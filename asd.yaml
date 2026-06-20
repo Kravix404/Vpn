@@ -1,0 +1,15 @@
+servers:
+  - name: warp1
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp1.conf
+  - name: warp2
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp2.conf
+  - name: warp3
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp3.conf
+  - name: warp4
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp4.conf
+  - name: warp5
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp5.conf
+  - name: warp6
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp6.conf
+  - name: warp7
+    url: https://raw.githubusercontent.com/Kravix404/Vpn/refs/heads/main/warp7.conf
