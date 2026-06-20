@@ -1,4 +1,4 @@
-# Coala Clash Config
+# Coala Clash Config - WARP Servers
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -21,72 +21,72 @@ proxies:
   - name: "WARP-2"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.3
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99ba
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se41=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8c73:78a9:3e5f:afcb:b911
+    private-key: Vuf6+OY8gmANRzV6T97Gw/0d0BblNWtcoM+uCUIk+mA=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
   - name: "WARP-3"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.4
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bb
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se42=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8ebb:6af0:829f:6365:c906
+    private-key: s5UY3h496yPHtuNuOXe9bIFUY+S5GQ4p7fZv/+iKTTc=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
   - name: "WARP-4"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.5
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bc
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se43=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8e14:4b79:9d40:48a6:4992
+    private-key: OWSBh5uQn1IshKqBexPnJvFNW3rOqVzF88Zh9Ywyv+E=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
   - name: "WARP-5"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.6
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bd
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se44=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:84ab:8f05:c4a:4d19:90e3
+    private-key: fnzBIJRMcusUe/Xa5QjLI/vLBAJehTCtqeevWJup/Vc=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
   - name: "WARP-6"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.7
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99be
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se45=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8cab:9a4c:cf22:210f:f87e
+    private-key: UIqFaqxQw57ReEpaP8k4SDSJm1fd5b/ihzaQAP7ghLc=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
   - name: "WARP-7"
     type: wireguard
     server: engage.cloudflareclient.com
-    port: 1701
-    ip: 172.16.0.8
-    ipv6: 2606:4700:110:87a2:bd2e:dc12:1338:99bf
-    private-key: BzmBPYQdFkmv0KCCAxcLdt8cKKXpbY0LhL7hyH8se46=
+    port: 4500
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8cab:9a4c:cf22:210f:f87e
+    private-key: UIqFaqxQw57ReEpaP8k4SDSJm1fd5b/ihzaQAP7ghLc=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    dns: [1.1.1.1, 1.0.0.1]
+    dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
     mtu: 1280
     udp: true
 
